@@ -27,22 +27,22 @@ set backupdir=~/.vim/backup//
 
 set undofile
 set noswapfile    		" http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
-set history=256          	" Store lots of :cmdline history
+set history=256       " Store lots of :cmdline history
 set ruler         		" show the cursor position all the time
-set showmatch  			" Show matching brackets.
+set showmatch  			  " Show matching brackets.
 set showcmd       		" display incomplete commands
 set incsearch     		" do incremental searching
 set laststatus=2  		" Always display the status line
 set autowrite     		" Automatically :write before running commands
-set hidden              	" Buffers can exist in the background
+set hidden            " Buffers can exist in the background
 set completeopt=longest,menuone
-set laststatus=2 		" Always show status line.
+set laststatus=2 		  " Always show status line.
 set number
 set numberwidth=3
-set noacd			" Automatically change the current working directory to the parent of whatever file is currently active in Eclipse
-set showcmd             	" Show incomplete cmds down the bottom
-set tabstop=2 			" Tabs are 2 spaces
-set shiftwidth=2 		" Tabs under smart indent
+set noacd			        " Automatically change the current working directory to the parent of whatever file is currently active in Eclipse
+set showcmd           " Show incomplete cmds down the bottom
+set tabstop=2 			  " Tabs are 2 spaces
+set shiftwidth=2 		  " Tabs under smart indent
 set expandtab
 
 set noea
@@ -66,7 +66,9 @@ set tags+=tags;/,./gems.tags;/,gems.tags;/
 " Search Settings
 " ===============
 set incsearch        " Find the next match as we type the search
-set hlsearch         " Hilight searches by default
+set hlsearch!        " Highlight searches by default
+command C let @/=""  " Clears highlighting of last search
+
 set viminfo='100,f1  " Save up to 100 marks, enable capital marks
 set ignorecase       " (ic) ignores case in search patterns
 
