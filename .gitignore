@@ -1,6 +1,6 @@
-/bundle
-/colors
-/undo
+bundle/*
+colors/*
+undo/*
 
 # exceptions...
-!/colors/base16*
+!colors/base16-solarized.vim
