@@ -1,0 +1,54 @@
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" Define bundles via Github repos
+Plugin 'bling/vim-airline'
+Plugin 'bogado/file-line' " enable opening a file in a given line
+Plugin 'christoomey/vim-run-interactive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'gagoar/StripWhiteSpaces'
+Plugin 'gregsexton/MatchTag'
+Plugin 'mattn/emmet-vim' " provides support for expanding abbreviations similar to emmet
+Plugin 'pbrisbin/vim-mkdir'
+Plugin 'scrooloose/syntastic'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-endwise' " Here’s the useful plugin that adds end after if, do, def keywords.
+Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-fugitive' " GIT
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/EasyGrep'
+Plugin 'vim-scripts/ctags.vim'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/tComment'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'chriskempson/base16-vim' " Base16 Colors
+" Plugin 'altercation/vim-colors-solarized'
+Plugin 'jtratner/vim-flavored-markdown' " GitHub markdown
+Plugin 'rking/ag.vim' " For searching
+Plugin 'christoomey/vim-tmux-navigator'
+
+" Syntax
+Plugin 'tpope/vim-cucumber'
+Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-rails'
+Plugin 'kchmck/vim-coffee-script'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+call vundle#end()
+filetype on
