@@ -2,10 +2,12 @@
 " possible, as it has side effects.
 set nocompatible
 set t_Co=256
-" colorscheme Tomorrow-Night-Eighties
+
+" setting colorsheme NOTE! This order of elemtns is important!
 colorscheme base16-solarized
-" set background=light
 let base16colorspace=256  " Access colors present in 256 colorspace
+let g:base16_shell_path="/home/evaldas/.config/base16-shell/"
+set background=light
 
 " Leader
 let mapleader = ","
