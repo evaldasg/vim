@@ -1,3 +1,6 @@
 /bundle
 /colors
 /undo
+
+# exceptions...
+!/colors/base16*
