@@ -12,4 +12,8 @@ git remote add origin https://github.com/manoevis/vim.git
 git fetch
 git checkout -t origin/master
 ```
+```bash
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/vimrc.bundles ~/.vimrc.bundles
+```
 my personal **vim** config
